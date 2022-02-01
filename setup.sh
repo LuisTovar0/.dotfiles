@@ -8,8 +8,9 @@ yes | sudo apt install lolcat
 yes | sudo apt install neofetch
 
 # creating links for the config files
-ln -s .vimrc ~/.vimrc
-ln -s .gitconfig ~/.gitconfig
-ln -s fish/config.fish ~/.config/fish/config.fish
+ln -s $PWD/.vimrc ~/.vimrc
+ln -s $PWD/.gitconfig ~/.gitconfig
+ln -s $PWD/fish/config.fish ~/.config/fish/config.fish
+mkdir ~/.config/fish
 mkdir ~/.config/fish/functions
-ln -s fish/functions/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+ln -s $PWD/fish/functions/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
