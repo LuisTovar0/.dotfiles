@@ -1,0 +1,69 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "acrylicOpacity": 0.65,
+            "colorScheme": "custom",
+            "useAcrylic": true
+        },
+        "list": 
+        [
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "commandline": "powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Prompt de comando"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "name": "custom",
+            "background": "#272727",
+            "black": "#000000",
+            "blue": "#064290",
+            "brightBlack": "#555753",
+            "brightBlue": "#3f81d6",
+            "brightCyan": "#28b1b1",
+            "brightGreen": "#6caf29",
+            "brightPurple": "#c364b8",
+            "brightRed": "#da4b3e",
+            "brightWhite": "#dadada",
+            "brightYellow": "#ccb92c",
+            "cursorColor": "#d8d8d8",
+            "cyan": "#006d77",
+            "foreground": "#aaaaaa",
+            "green": "#57b400",
+            "purple": "#a12db3",
+            "red": "#bb1d18",
+            "selectionBackground": "#afafaf",
+            "white": "#cfcfcf",
+            "yellow": "#c29e00"
+        }
+    ]
+}
