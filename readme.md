@@ -8,6 +8,8 @@ I also store my Windows Terminal (that's the interface I use for WSL) configs he
 
 ## Running it
 
+This repo must be cloned to the user's home directory in order for the script to work. That's because the `sudo` command makes the current user switch to `root`, which makes the `$HOME` variable be `/root`, so I had to use relative paths.
+
 Execute the script:
 
 ```bash
