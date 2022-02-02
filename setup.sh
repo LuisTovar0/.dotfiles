@@ -1,5 +1,6 @@
 #!/bin/bash
 
+folder="/home/$USER"
 echo_ex() {
 	echo "$@"
 	sh -c "$@"
@@ -23,7 +24,6 @@ echo "🗿🗿🗿 Finished installing dependencies 🗿🗿🗿"
 echo
 
 # creating links for the config files
-folder="/home/$USER"
 echo_ex "ln -s $PWD/.vimrc $folder/.vimrc"
 echo_ex "ln -s $PWD/.gitconfig $folder/.gitconfig"
 echo_ex "ln -s $PWD/fish/config.fish $folder/.config/fish/config.fish"
