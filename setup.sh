@@ -1,30 +1,38 @@
 #!/bin/bash
 
-folder="/home/$USER"
-echo_ex() {
+if [ $# -ne 1 ]
+then
+	echo Installation will be done assuming this repo is located in the user home directory.
+	folder=".."
+else
+	folder="/home/$1"
+	echo Installation will be done on the home directory $folder.
+fi
+
+echo_x() {
 	echo "$@"
 	sh -c "$@"
 }
 
-echo_ex "mkdir $folder/.config/"
-echo_ex "mkdir $folder/.config/fish/"
-echo_ex "mkdir $folder/.config/fish/functions/"
+echo_x "mkdir $folder/.config/"
+echo_x "mkdir $folder/.config/fish/"
+echo_x "mkdir $folder/.config/fish/functions/"
 
 # update and upgrade packages
-echo_ex "sudo apt update"
-echo_ex "yes | sudo apt upgrade" # yes outputs "y" to all the inputs of the piped command
+echo_x "sudo apt update"
+echo_x "yes | sudo apt upgrade" # yes outputs "y" to all the inputs of the piped command
 
 # fish; fish config depencencies
-echo_ex "yes | sudo apt install fish"
-echo_ex "yes | sudo apt install lolcat"
-echo_ex "yes | sudo apt install neofetch"
+echo_x "yes | sudo apt install fish"
+echo_x "yes | sudo apt install lolcat"
+echo_x "yes | sudo apt install neofetch"
 
 echo
 echo "🗿🗿🗿 Finished installing dependencies 🗿🗿🗿"
 echo
 
 # creating links for the config files
-echo_ex "ln -s $PWD/.vimrc $folder/.vimrc"
-echo_ex "ln -s $PWD/.gitconfig $folder/.gitconfig"
-echo_ex "ln -s $PWD/fish/config.fish $folder/.config/fish/config.fish"
-echo_ex "ln -s $PWD/fish/fish_prompt.fish $folder/.config/fish/functions/fish_prompt.fish"
+echo_x "ln -s $PWD/.vimrc $folder/.vimrc"
+echo_x "ln -s $PWD/.gitconfig $folder/.gitconfig"
+echo_x "ln -s $PWD/fish/config.fish $folder/.config/fish/config.fish"
+echo_x "ln -s $PWD/fish/fish_prompt.fish $folder/.config/fish/functions/fish_prompt.fish"

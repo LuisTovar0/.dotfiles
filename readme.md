@@ -8,10 +8,10 @@ I also store my Windows Terminal (that's the interface I use for WSL) configs he
 
 ## Running it
 
-To execute the script:
+If the repo isn't located in the home directory, the user name should be passed by parameter (this is because `sudo` switches the current user to `root`, which makes the `$HOME` variable become `/root`). To execute the script:
 
 ```bash
-sudo ./setup.sh
+sudo ./setup.sh [USERNAME]
 ```
 
 Set fish as default shell (not in the script because this command requires the user password):
