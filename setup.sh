@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if $# -ne 1
+if [ $# -ne 1 ]
 then
 	echo Installation will be done assuming this repo is located in the user home directory.
 	folder=".."
