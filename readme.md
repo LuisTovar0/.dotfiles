@@ -14,7 +14,13 @@ If the repo isn't located in the home directory, the user name should be passed 
 sudo ./setup.sh [USERNAME]
 ```
 
-Set fish as default shell (not in the script because this command requires the user password):
+Drop the ultra-secret WakaTime API key into the WT config file:
+
+```bash
+echo "KEY" > ../.wakatimecfg
+```
+
+Set fish as the default shell (not in the script because this command requires the user password):
 
 ```bash
 chsh -s /usr/bin/fish

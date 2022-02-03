@@ -27,6 +27,11 @@ echo_x "yes | sudo apt install fish"
 echo_x "yes | sudo apt install lolcat"
 echo_x "yes | sudo apt install neofetch"
 
+# install wakatime
+echo_x "yes | sudo apt install python3-pip"
+echo_x "sudo pip install wakatime"
+echo_x "touch $folder/.wakatimecfg"
+
 echo -e "\n\n🗿🗿🗿 Finished installing dependencies 🗿🗿🗿\n"
 
 # creating links for the config files
