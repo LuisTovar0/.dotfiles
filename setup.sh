@@ -24,6 +24,15 @@ echo_x() { # echo and execute
 # update and upgrade packages
 echo_x 🚀 💻 "sudo apt update"
 echo_x 💥 ⚡️ "yes | sudo apt upgrade" # yes outputs "y" to all the inputs of the piped command
+echo_x 🥱 "git config --global credential.helper cache --timeout=3600"
+
+# zsh
+echo_x 🦓 🐚 "yes | sudo apt install zsh"
+
+# nvm and node
+echo_x 🖖 "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash"
+echo_x 🆒 "nvm install 16 --lts" 🐴
+
 
 # fish; fish config depencencies
 echo_x 🐠 🎣 "yes | sudo apt install fish"
