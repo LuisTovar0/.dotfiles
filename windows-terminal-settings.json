@@ -3,8 +3,18 @@
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.65,
             "colorScheme": "custom",
+            "cursorShape": "filledBox",
+            "elevate": false,
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "size": 13
+            },
+            "intenseTextStyle": "all",
+            "opacity": 70,
+            "padding": "20",
+            "startingDirectory": "C:\\Users\\luism\\OffOneDrive",
             "useAcrylic": true
         },
         "list": []
