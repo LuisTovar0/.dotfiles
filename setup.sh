@@ -29,9 +29,17 @@ echo_x 🥱 "git config --global credential.helper cache --timeout=3600"
 # zsh
 echo_x 🦓 🐚 "yes | sudo apt install zsh"
 
-# nvm and node
-echo_x 🖖 "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash"
-echo_x 🆒 "nvm install 16 --lts" 🐴
+# nvm, node and bun
+echo_x 🖖 "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash"
+echo_x 🫡 ☁ "nvm ls-remote"
+echo_x 🆒 🐴 "nvm install lts"
+echo_x 🍞 🥖 "npm i -g bun"
+
+# neovim
+echo_x "sudo apt install libfuse2 #why u do dis to me bro?"
+echo_x 🤳 🦾 "curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage"
+echo_x 🐨 ☄ "chmod u+x nvim.appimage"
+echo_x 💰 💹 "sudo mv ./nvim.appimage /usr/bin/nvim"
 
 
 # fish; fish config depencencies
@@ -52,6 +60,7 @@ echo_x 🌳 🌊 "ln -s $PWD/.gitconfig $folder/.gitconfig"
 echo_x 🎮 🔫 "mkdir -p $folder/.config/fish/functions/"
 echo_x 🐟 ⚙️  "ln -s $PWD/fish/config.fish $folder/.config/fish/config.fish"
 echo_x 🍣 🐡 "ln -s $PWD/fish/fish_prompt.fish $folder/.config/fish/functions/fish_prompt.fish"
+echo_x 🫥 😶‍🌫 "ln -s $PWD/nvim $folder/.config/nvim"
 
 # grant the user ownership of his own home directory, and its subdirectories
 echo_x 👑 📂 "chown -R $username:$username $folder"
