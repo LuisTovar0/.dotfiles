@@ -1,0 +1,12 @@
+function prompt_char() {
+  git branch >/dev/null 2>/dev/null && echo "%F{green}◆%f" && return
+  hg root >/dev/null 2>/dev/null && echo "%F{red}✖%f" && return
+  echo ◯
+}
+
+autoload -Uz vcs_info # enable vcs_info
+function precmd () { vcs_info }
+zstyle ':vcs_info:git' formats ' (%F{magenta}%b%f)'
+setopt prompt_subst
+
+PROMPT=' $(prompt_char) %F{cyan}%~%f$vcs_info_msg_0_ ❯%F{cyan}❯%f%F{green}❯%f '
