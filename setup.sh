@@ -51,7 +51,6 @@ echo_x 🐨 ☄ "chmod u+x nvim.appimage"
 echo_x 💰 💹 "sudo mv ./nvim.appimage /usr/bin/nvim"
 
 # fish; fish config depencencies
-echo_x 🐠 🎣 "yes | sudo apt install fish"
 echo_x 😹 🌈 "yes | sudo apt install lolcat"
 echo_x 🆕 📥 "yes | sudo apt install neofetch"
 
@@ -70,6 +69,8 @@ echo_x 🎮 🔫 "mkdir -p $folder/.config/fish/functions/"
 echo_x 🐟 ⚙️  "ln -s $PWD/fish/config.fish $folder/.config/fish/config.fish"
 echo_x 🍣 🐡 "ln -s $PWD/fish/fish_prompt.fish $folder/.config/fish/functions/fish_prompt.fish"
 echo_x 🫥 😶‍🌫 "ln -s $PWD/nvim $folder/.config/nvim"
+echo_x 🫥 😶‍🌫 "ln -s $PWD/zsh $folder/.config/zsh"
+echo_x 🫥 😶‍🌫 "ln -s $PWD/.zshenv $folder/.zshenv"
 
 # grant the user ownership of his own home directory, and its subdirectories
 echo_x 👑 📂 "chown -R $username:$username $folder"

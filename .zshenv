@@ -1,15 +1,17 @@
+neofetch
 export ZDOTDIR="$HOME/.config/zsh"
 
 # For a full list of active aliases, run `alias`.
-alias py="python3"
-#alias clear="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo"
-alias edcf="vim $ZDOTDIR/.zshrc"
-alias gst="git status"
-alias gaa="git add ."
-alias la="ls -a"
-alias ..="cdl .."
-alias ...="cdl ../.."
-alias rm=trash
+export py="python3"
+export vim=nvim
+#export clear="clear; echo; echo; seq 1 (tput cols) | sort -R | spark | lolcat; echo; echo"
+export edcf="vim $ZDOTDIR/.zshrc"
+export gst="git status"
+export gaa="git add ."
+export la="ls -a"
+export ..="cdl .."
+export ...="cdl ../.."
+export rm=trash
 
 cdl() {
 	cd $1

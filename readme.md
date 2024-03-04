@@ -20,10 +20,4 @@ Drop the ultra-secret WakaTime API key into the WT config file:
 echo "KEY" > ../.wakatimecfg
 ```
 
-Set fish as the default shell (not in the script because this command requires the user password):
-
-```bash
-chsh -s /usr/bin/fish
-```
-
 Debugging this was weird
