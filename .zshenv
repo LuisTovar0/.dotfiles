@@ -9,9 +9,14 @@ export edcf="vim $ZDOTDIR/.zshrc"
 export gst="git status"
 export gaa="git add ."
 export la="ls -a"
-export ..="cdl .."
-export ...="cdl ../.."
+#export ..="cdl .."
+#export ...="cdl ../.."
 export rm=trash
+
+clean_nvim() {
+	rm -rf ~/.config/nvim/*
+	rm -rf ~/.local/share/nvim
+}
 
 cdl() {
 	cd $1
