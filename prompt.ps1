@@ -39,7 +39,7 @@ function Get-GitSegment {
 function Get-PathSegment {
     param([PSCustomObject]$NextSegment)
     $parts  = (Get-Location).Path -split '\\'
-    $folder = if ($parts.Length -ge 2) { "$($parts[-2])\\$($parts[-1])" } else { (Get-Location).Path }
+    $folder = if ($parts.Length -gt 2) { "..\$($parts[-2])\$($parts[-1])" } else { (Get-Location).Path }
 
     $ownBg  = $bgPathRgb
     $nextBg = $NextSegment.BgColor
