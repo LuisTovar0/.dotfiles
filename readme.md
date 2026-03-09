@@ -6,6 +6,12 @@ I make use of a Bash script to do all that (because I'm assuming that's what com
 
 I also store my Windows Terminal (that's the interface I use for WSL) configs here.
 
+## PowerShell prompt
+
+1. Download `prompt.ps1` to `%UserProfile%`
+2. File Explorer > `%UserProfile%` > right-click on `prompt.ps1` > properties > unblock
+3. Add `. .\prompt.ps1` to the start of the `$profile` file
+
 ## Running it
 
 If the repo isn't located in the home directory, the user name should be passed by parameter (this is because `sudo` switches the current user to `root`, which makes the `$HOME` variable become `/root`). To execute the script:
