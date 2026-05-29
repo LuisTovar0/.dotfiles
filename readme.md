@@ -11,6 +11,8 @@ I also store my Windows Terminal (that's the interface I use for WSL) configs he
 1. Download `prompt.ps1` to `%UserProfile%`
 2. File Explorer > `%UserProfile%` > right-click on `prompt.ps1` > properties > unblock
 3. Add `. .\prompt.ps1` to the start of the `$profile` file
+4. Install https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Meslo.zip mono font
+5. Windows Terminal > Defaults > Text > Font > Select your mono Nerd Font
 
 ## Running it
 
