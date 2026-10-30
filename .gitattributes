@@ -1,0 +1,14 @@
+# Store text files with LF in the repo; check out with native endings otherwise.
+* text=auto
+
+# setup.sh symlinks these into the Linux home directory, so they must always
+# be checked out with LF regardless of which OS runs git.
+*.sh text eol=lf
+.zshenv text eol=lf
+.vimrc text eol=lf
+.gitconfig text eol=lf
+zsh/** text eol=lf
+nvim/** text eol=lf
+
+# PowerShell scripts are only executed on Windows: always CRLF.
+*.ps1 text eol=crlf
