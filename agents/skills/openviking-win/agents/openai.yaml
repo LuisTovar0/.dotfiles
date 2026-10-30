@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenViking Project Memory"
+  short_description: "Route and maintain canonical project memory"
+  default_prompt: "Use $openviking to consult and update this project's canonical memory."
